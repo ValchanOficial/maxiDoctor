@@ -9,25 +9,33 @@ export const Container = styled.form`
     align-items: center;
 
     margin: 50px 0;
+`;
 
-    div {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-      max-width: 442px;
-      border-bottom: 1px solid #7e479b;
-      margin: 16px 0;
-      padding-bottom: 6px;
+export const Group = styled.div`
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  max-width: 442px;
+`;
 
-      label {
-        color: gray;
-        width: 50px;
-        text-align: start;
-        margin-right: 16px;
-        font-weight: 500;
-      }
-    }
+export const LabelGroup = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 442px;
+  border-bottom: 1px solid #7e479b;
+  margin: 16px 0;
+  padding-bottom: 6px;
+
+  label {
+    color: gray;
+    width: 50px;
+    text-align: start;
+    margin-right: 16px;
+    font-weight: 500;
+  }
 `;
 
 export const Text = styled.p`
