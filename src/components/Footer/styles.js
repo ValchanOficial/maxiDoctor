@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const Container = styled.div`
     display: flex;
     flex-direction: column;
-    align-items: end;
 
     width: 100%;
     max-width: 442px;
@@ -13,6 +12,7 @@ export const Container = styled.div`
 export const Group = styled.div`
     display: flex;
     justify-content: space-around;
+    align-items: end;
     margin-bottom: 20px;
 `;
 
