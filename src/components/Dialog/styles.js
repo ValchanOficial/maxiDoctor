@@ -11,6 +11,11 @@ export const Container = styled.div`
   width: 100%;
   max-width: 100vw;
   margin: 0;
+  user-select: none;
+
+  p {
+    color: #7e479b;
+  }
 `;
 
 export const Content = styled.div`
