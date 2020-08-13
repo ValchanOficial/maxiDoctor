@@ -27,7 +27,7 @@ export const Icon = styled.div`
     p {
         color: gray;
 
-        font-size: 18px;
+        font-size: 16px;
         text-align: center;
         text-transform: uppercase;
 
