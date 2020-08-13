@@ -9,7 +9,7 @@
 
 ### API
 
-https://servicodados.ibge.gov.br/api/v1/localidades/estados
+- https://servicodados.ibge.gov.br/api/v1/localidades/estados
 
 ### Illustrations
 
@@ -18,4 +18,4 @@ https://servicodados.ibge.gov.br/api/v1/localidades/estados
 
 ### Reference Screenshot
 
-![MaxiDoctor](/docs/ref.jpg)
+![MaxiDoctor](/doc/ref.jpg)
