@@ -14,14 +14,18 @@ const Form = ({ list }) => {
     const [state, setState] = useState('');
     const [isOpen, setIsOpen] = useState(false);
 
+    const [error, setError] = useState(false);
+
     const handleSubmit = useCallback((e) => {
         e.preventDefault();
         if(!checkMinLength(CRM).error && !checkIsEmptyOrIsSelect(state).error) {
+            setError(false);
             setIsOpen(true);
         }
+        setError(true);
     }, [CRM, state]);
 
-    const handleUpdateValue = useCallback((e, func ) => {
+    const handleUpdateValue = useCallback((e, func) => {
         const { target : { value } } = e;
         func(value);
     }, []);
@@ -33,7 +37,7 @@ const Form = ({ list }) => {
                     <label htmlFor="crm">CRM</label>
                     <Input id="crm" value={CRM} onChange={e => handleUpdateValue(e, setCRM)} placeholder="0000000"/>
                 </LabelGroup>
-                <Message status={checkMinLength(CRM)} />
+                <Message status={error && checkMinLength(CRM)} />
             </Group>
 
             <Group>
@@ -41,7 +45,7 @@ const Form = ({ list }) => {
                     <label htmlFor="uf">UF</label>
                     <Select list={list} onChange={e => handleUpdateValue(e, setState)}/>
                 </LabelGroup>
-                <Message status={checkIsEmptyOrIsSelect(state)} />
+                <Message status={error && checkIsEmptyOrIsSelect(state)} />
             </Group>
 
             <Input type="submit" value="CONTINUE"/>
