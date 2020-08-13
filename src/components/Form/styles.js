@@ -53,6 +53,8 @@ export const Input = styled.input`
     border: 0;
     width: 100%;
     max-width: 442px;
+    color: #7e479b;
+    padding-left: 4px;
 
     &[type=submit] {
         background-color: #9b83bd;

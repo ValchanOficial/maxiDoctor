@@ -2,6 +2,7 @@
   "name": "maxidoctor",
   "version": "0.1.0",
   "private": true,
+  "author": "Valéria Padilha de Vargas",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
@@ -11,7 +12,6 @@
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.2",
-    "react-select": "^3.1.0",
     "styled-components": "^5.1.1"
   },
   "scripts": {
